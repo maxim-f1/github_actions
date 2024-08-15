@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "github-actions"
+version = "0.1.0"
+description = ""
+authors = ["maxim-f1 <maxconal228@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.dev.dependencies]
+pytest-asyncio = "^0.23.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
