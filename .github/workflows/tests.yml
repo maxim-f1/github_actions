@@ -2,7 +2,7 @@ name: Test Suite
 on: push
 
 jobs:
-  ci:
+  test_suite:
     strategy:
       fail-fast: false
       matrix:
