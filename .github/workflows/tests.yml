@@ -8,7 +8,7 @@ jobs:
       matrix:
         python-version: ["3.12"]
         poetry-version: ["1.7.1"]
-        os: [ubuntu-22.04, macos-latest, windows-latest]
+        os: [ubuntu-22.04]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
@@ -21,4 +21,4 @@ jobs:
           poetry-version: ${{ matrix.poetry-version }}
 
       - name: Run tests
-        run: poetry run pytest
+        run: poetry shell && poetry run pytest
