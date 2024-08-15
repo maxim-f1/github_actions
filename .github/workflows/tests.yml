@@ -21,4 +21,4 @@ jobs:
           poetry-version: ${{ matrix.poetry-version }}
 
       - name: Run tests
-        run: poetry shell && poetry run pytest
+        run: pytest
